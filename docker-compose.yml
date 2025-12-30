@@ -1,0 +1,15 @@
+services:
+  app:
+    container_name: fxcustomimage
+    image: fxcustomimage:dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    env_file:
+      - .env.local
+    command: npm run dev
