@@ -8,6 +8,10 @@ export default defineConfig(({ mode }) => {
     server: {
       port: 8532,
       host: true,
+      strictPort: true,
+      allowedHosts: [
+        'card.farmix.com.br'
+      ]
     },
     plugins: [react()],
     define: {
