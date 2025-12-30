@@ -12,4 +12,4 @@ COPY . .
 
 EXPOSE 8532
 
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "build"]
